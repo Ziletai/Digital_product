@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*----------------- Variables */
+:root{
+  --green-color: #7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  /* Tipografía */
+  --normal: 12px;
+  /* Espaciado Padding*/
+  --space: 10px;
+  /* Box shadow */
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+/*----------------- Variables */
+/* Aquí empieza el nav */
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, label {
+  font-size: var(--normal);
+}
+
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--white-color);
+}
+/* Aquí termina el nav */
+/* Aquí empieza el producto */
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  /* max-height: 50px; */
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+
+.product{
+  padding: var(--space);
+  margin-top: -240px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #5e9e22;
+}
+/* Aquí termina el producto */
+
+/* Aquí empieza el medio */
+.intermedio {
+  background-size: cover;
+  background-position: center;
+  padding: 10%; /* espaciado entre las imagenes y el texto */
+  display: flex;
+}
+
+.medio {
+  padding: var(--space);
+  margin: auto;
+}
+
+.medio .content_medio {
+  background-color: var(--white-color);
+  padding: 20px;
+  width: 154px;
+}
+
+.img_medio {
+  text-align: center;
+}
+/* Aquí termina el medio */
+
+/* Aquí empieza la línea media */
+hr {
+  border: 1px solid #EEEEEE;
+}
+/* Aquí termina la línea media */
+
+/* Aquí empiezan las menciones */
+.title_menciones {
+  /* padding: 15%; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menciones {
+  background-size: cover;
+  /* background-position: center; /* espaciado entre las imagenes y el texto */ */
+  padding: 20px;
+  display: flex;
+}
+
+.mencion {
+  padding: var(--space);
+  margin-bottom: 50px;
+}
+
+.mencion .content_mencion {
+  background-color: var(--white-color);
+  padding: 0px 20px 10px 0px;
+  width: 218px;
+  box-shadow: 1px 1px 8px 0px #e6e5e9;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.mencion .content_mencion h3 {
+  padding-left: 8px;
+}
+
+.mencion .content_mencion p {
+  padding-left: 8px;
+}
+
+/* Aquí terminan las menciones */
+
+/* Aquí empieza la venta */
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images {
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.data {
+  margin-top: var(--space); /*Nos da un espacio en la parte de arriba */
+  margin-bottom: var(--space); /*Nos da un espacio en la parte de abajo */
+  width: 100%; /*Nos ayuda a que ocupe el ancho la casilla correspondiente */
+  height: 35px; /*Nos da la altura de nuestra casilla */
+  border-radius: 2px; /*Nos redondea el borde de la casilla */
+  border: 1px solid var(--black-color); /*Nos ayuda a quitar el borde extra que genera el anterior borde, tenemos que definir su ancho, que es de 1px, después como queremos que se vea, solid, y al final el color */
+  box-sizing: border-box; /*Nos ayuda a que se respete el espacio correcto donde toma de referencia el widthy el border box toma de referencia el padding y border del elemento que lo contiene */
+}
+
+.modulo_pago .main_button {
+  margin-top: 10px;
+}
+/* Aquí termina la venta */
+
+/* Aquí empieza el footer */
+footer {
+  display: flex;
+  background-color: #313337;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: var(--green-color);
+  text-decoration: none;
+}
+
+/* Aquí termina el footer */

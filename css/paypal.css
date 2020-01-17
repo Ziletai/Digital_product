@@ -1,0 +1,13 @@
+body {
+  background-color: var(--black-color);
+  text-align: center; /*nos sirve para centrar el texto y las imagenes en este caso de todo el body*/
+  color: var(--white-color);
+  display: flex; /*verifica que todo este centrado*/
+  justify-content: center; /*complemento del display flex*/
+  align-items: center; /*complemento del display flex*/
+  height: 100vh;
+}
+
+.content_paypal a {
+  color: var(--green-color);
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 8.333333333%;
+}
+
+.col-2 {
+  width: 16.666666666%;
+}
+
+.col-3 {
+  width: 24.999999999%;
+}
+
+.col-4 {
+  width: 33.333333332%;
+}
+
+.col-5 {
+  width: 41.666666665%;
+}
+
+.col-6 {
+  width: 49.999999998%;
+}
+
+.col-7 {
+  width: 58.333333331%;
+}
+
+.col-8 {
+  width: 66.666666664%;
+}
+
+.col-9 {
+  width: 74.999999997%;
+}
+
+.col-10 {
+  width: 83.333333333%;
+}
+
+.col-11 {
+  width: 91.666666663%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 10px 30px 30px 3px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  align-self: center; /* Para alinear el texto a la mitad de la imagen */
+}
+
+@media (max-width: 900px) {
+  .row{
+    display: inherit;
+  }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100%;
+  }
+}
+
+
+/* ************Muestra*********
+.container {
+  /* limita el tamaño del container para que tenga un límite cuando la pantalla sea demasiado grande */
+  /* max-width: 90%; */
+  /* La suma del padding, max-width y padding de row debe dar un total de 100%. Esto da como resultado un sitio responsivo. */
+  /* padding:5%; */
+  /* margin: auto; */
+/* alínea el container hacia el centro */
+/* } */
+/* .row { */
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding:5% */
+    /* Se encarga de disponer el contenido de manera horizontal */
+    /* * Crear espaciado en columnas */ */
+    /* [class*='col-'] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/ */
+      /* padding: 10px; */
+    /* } */
+    /* [class*='col-' ] img{ /* Las imágenes tendrán un tamaño proporcional al grid, dejando un pequeño margen-*/ */
+      /* padding: 10px; */
+      /* width:90%; */
+    /* } */
+    /* container > row > column */
+
+    /* @media (max-width: 900px) { */
+      /* .row { */
+        /* display: inherit; */
+      /* } */
+      /* [class*='col-'] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/ */
+      /* width:100% */
+      /* } */
+    /* } */
